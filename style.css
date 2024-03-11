@@ -67,14 +67,16 @@ main .input-container {
 .input-container p {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .input-container input {
     border: none;
     border-radius: 0.5rem;
     height: 2rem;
-    width: 300px;
+    width: 70%;
     margin-bottom: 1.5rem;
+    
 }
 
 #text-input {
@@ -106,6 +108,7 @@ button:hover {
 
 main .info {
     width: 32%;
+    text-align: center;
 }
 
 main .info p {
@@ -164,7 +167,7 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 300px;
+        width: 95%;
     }
 
     .input-container input {
@@ -204,3 +207,78 @@ footer p {
     }
 }
 
+@media only screen and (481px <= width <= 768px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    header {
+        height: 30vh;
+    }
+
+    header img {
+        width: 7rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        height: 63vh;
+    }
+
+    main .input-container {
+        max-width: 500px;
+        width: 60%;
+    }
+
+    .input-container p {
+        font-size: 1.5rem;
+        text-align:center;
+        font-weight: 500;
+    }
+    
+    .input-container div:first-of-type {
+        width: 100%;
+    }
+
+    .input-container div:first-of-type input {
+        width: 70%;
+        margin-right: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .input-container button {
+        font-size: 0.85rem;
+        font-weight: 200;
+        height: 2rem;
+        width: 48px;
+    }
+
+    .input-container #result {
+        height: fit-content;
+        width: 100%;
+        font-size: 1.15rem;
+        text-align: center;
+        display: block;
+    }
+
+    main .info {
+        width: 90%;
+        text-align: center;
+    }
+
+    main .info p {
+        font-size: 1.15rem;
+    }
+
+    footer {
+        height: 7vh;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
