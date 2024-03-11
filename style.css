@@ -125,6 +125,7 @@ footer p {
     text-align: center;
 }
 
+<<<<<<< HEAD
 @media only screen and (320px <= width <= 480px) {
     body {
         height: 100vh;
@@ -200,3 +201,5 @@ footer p {
         font-size: 0.8rem;
     }
 }
+=======
+>>>>>>> 9ff60301021bd76c883ec0f12ed2c514ac2699ae
