@@ -125,12 +125,14 @@ footer p {
     text-align: center;
 }
 
-<<<<<<< HEAD
+
+/* Responsive to screen between 320px and 480px)*/
 @media only screen and (320px <= width <= 480px) {
     body {
         height: 100vh;
         width: 100vw;
     }
+    
     header {
         height: 20vh;
     }
@@ -201,5 +203,4 @@ footer p {
         font-size: 0.8rem;
     }
 }
-=======
->>>>>>> 9ff60301021bd76c883ec0f12ed2c514ac2699ae
+
