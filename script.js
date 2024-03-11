@@ -5,17 +5,24 @@ const result = document.getElementById('result')
 let aPalindrome = 'is a palindrome.'
 let notPalindrome = 'is not a palindrome,'
 
+function errorAlert () {
+    alert('Please input a value')
+}
+
+
 function palindromeChecker (str) {
     let reEx = /[^a-z0-9]/ig
-    str = textInput.value.toLowerCase();
-    let cleanStr = str.replace(reEx, "")
+    str = textInput.value;
+    let cleanStr = str.toLowerCase().replace(reEx, "")
 
     let rev = cleanStr.split('').reverse().join('');
 
-    if (rev == cleanStr) {
-        return result.innerText = `${textInput.value} ${aPalindrome}`
+    if (str.length === 0) {
+        return errorAlert()
+    } else if (rev == cleanStr) {
+        return result.innerText = `${textInput.value} ${aPalindrome}`;
     } else {
-        return result.innerText = `${textInput.value} ${notPalindrome}`
+        return result.innerText = `${textInput.value} ${notPalindrome}`;
     }
 }
 
